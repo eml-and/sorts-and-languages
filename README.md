@@ -10,4 +10,6 @@ I am a noob, never did any programming before my 20s. Initially started with som
 
 "Back in my days we were writing in Assembler"
 
-"mAtLaB iS iMpOrTaNt yOu kNoW!!"
+"mAtLaB iS iMpOrTaNt yOu kNoW!!!"
+
+"I felt like I had wasting my life when I switched from TF to PyTorch"
