@@ -7,3 +7,4 @@ for i in range(len(the_list)):
         if the_list[i] > the_list[j]:
             the_list[i], the_list[j]  = the_list[j], the_list[i]
             print(the_list)
+    print("-----------")

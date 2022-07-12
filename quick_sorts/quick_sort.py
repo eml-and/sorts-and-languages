@@ -15,6 +15,7 @@ def divide(array: list, start, end):
             break
     array[start], array[larger] = array[larger], array[start]
     print(array)
+    print("-----------")
     return larger
 
 
