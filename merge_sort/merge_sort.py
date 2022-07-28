@@ -28,6 +28,7 @@ def merge(left_list, right_list) -> list:
     while len(right_list) > 0:
         new_list.append(right_list[0])
         del right_list[0]
+    print(f">> {new_list}")
     return new_list
 
 
