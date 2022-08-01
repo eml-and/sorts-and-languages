@@ -4,8 +4,7 @@
 using namespace std;
 
 void list_printer(int the_array[], int size){
-    int i;
-    for (i = 0; i < size; i++)
+    for (int i = 0; i < size; i++)
         cout << the_array[i] << " ";
     cout << endl;
 }
