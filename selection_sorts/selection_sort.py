@@ -2,6 +2,7 @@
 the_list = [42, 360, 69, 2012, 12, 99, 5, 2049, 420]
 
 print(the_list)
+print("-----------")
 k = 0
 for j in range(len(the_list)):
     k = j
