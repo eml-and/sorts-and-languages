@@ -14,9 +14,9 @@ void list_printer(int the_array[], int size){
 void bubble_sort(int the_array[], int size) {
     int i, j;
     for (i = 0; i <= size-1; i++)
-        for (j = i+1; j <= size-1; j++)
-            if (the_array[i] > the_array[j]) {
-                swap(the_array[i], the_array[j]);
+        for (j = 0; j <= size-1-i; j++)
+            if (the_array[j] > the_array[j+1]) {
+                swap(the_array[j+1], the_array[j]);
                 list_printer(the_array, size);
             }
 }
