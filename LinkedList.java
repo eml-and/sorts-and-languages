@@ -16,7 +16,7 @@ public classMyLinkedList<T> implements List<T> {
      return;
    }
    while (lstCopy != null) {
-     ListItem<T> item = lst.Copy.key;
+     ListItem<T> item = lstCopy.key;
      while (item !=null) {
        ListItem<T> tailHead = tail;
        if (tailHead.next != null) {
