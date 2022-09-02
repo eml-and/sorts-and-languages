@@ -19,7 +19,7 @@ public <T> ListItem<ListItem<T>> makeListOfLimitedListsFromArray ( T[] a, Compar
     
   // populate inner list until limit
     while (cmp(current_sum, limit) > 0) {
-      current_sum = adder(current_sum, a[i]);
+      current_sum = adder.add(current_sum, a[i]);
       inner.key = a[i];
       inner.next = new ListItem<T>;
       inner = inner.next;
@@ -28,6 +28,7 @@ public <T> ListItem<ListItem<T>> makeListOfLimitedListsFromArray ( T[] a, Compar
     p.next = new ListItem<ListItem<T>>();
     p = p.next;
   }
+  return head;
     
     
     
