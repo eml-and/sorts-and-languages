@@ -6,6 +6,38 @@ public class ListItem<T> {
 public classMyLinkedList<T> implements List<T> {
   private ListItem<T> head;
   
+// exam task: add all sorted elements in increasing order contained in the nested list
+// beginning with ListItem<ListItem<T>> to a new ListItem<T> element at the end of ListItem<T> tail
+// manipulating lst is not allowed
+  
+ public<T> void mergeLists(ListItem<ListItem<T>> lst, Comparator<T> cmp, ListItem<T> tail) {
+   ListItem<ListItem<T>> lstCopy = lst;
+   if (lst==null) {
+     return;
+   }
+   while (lstCopy != null) {
+     ListItem<T> item = lst.Copy.key;
+     while (item !=null) {
+       ListItem<T> tailHead = tail;
+       if (tailHead.next != null) {
+         while (cmp.compare(item.key, tailHead.next.key) > 0) {
+           tailHead = tailHead.next;
+           if (tailHead.next == null) {
+             break
+             }
+         }
+       }
+       ListItem<T> temp = tailHead.next;
+       tailHead = tailHead.next = new ListItem<>();
+       tailHead.key = item.key;
+       tailHead.next = temp;
+       item = item.next;
+    }
+    lstCopy = lstCopy.next
+   }
+   
+  
+  
   
   public boolean contains(T t) {
     for (ListItem<T>p=head; p!=null; p=p.next) {
