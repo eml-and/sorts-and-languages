@@ -25,7 +25,7 @@ public <T> ListItem<ListItem<T>> makeListOfLimitedListsFromArray ( T[] a, Compar
       inner = inner.next;
         i++;
     }
-    p.next = new ListItem<ListItem<T>>();
+    p.next = new ListItem<>();
     p = p.next;
   }
   return head;
@@ -38,7 +38,7 @@ public <T> ListItem<ListItem<T>> makeListOfLimitedListsFromArray ( T[] a, Compar
   if (a.length==0) {
     return null;
   }
-   ListItem<ListItem<T>> head = new ListItem<ListItem<>>();
+   ListItem<ListItem<T>> head = new ListItem<>();
    ListItem<T> inner = new ListItem<>();
    inner.key = a[0];
    current_sum = a[0];
@@ -51,7 +51,7 @@ public <T> ListItem<ListItem<T>> makeListOfLimitedListsFromArray ( T[] a, Compar
        inner.next.key = a[i];
      }
      else {
-       ListItem<ListItem<T>> p.next = new ListItem<ListItem<T>>();
+       ListItem<ListItem<T>> p.next = new ListItem<>();
        ListItem<T> inner = new ListItem<T>;
        p = p.next;
        p.key = inner;
