@@ -37,7 +37,7 @@ public <T> BinaryTreeNode<T> removeIf (BinaryTreeNode<T> root, Predicate<T> pred
     }
   }
  }
-  public T removeRightMostDescandantAndReturnItsKey(BinaryTreeNode<T> root) {
+  public<T> T removeRightMostDescandantAndReturnItsKey(BinaryTreeNode<T> root) {
     if (root.right.right!=null) {
       root=root.right;
       root.key = removeRightMostDescandantAndReturnItsKey(root);
