@@ -6,10 +6,11 @@ Here are some of my favourites:
 
 "My python knows C++ so I dont have to"
 
-"Who is this sudo and how do I shut her down?"
 
-"Back in my days we were writing in Assembler"
+"Back in my days we were writing in Assembly"
 
-"mAtLaB iS iMpOrTaNt yOu kNoW!!!"
+"Matlab is important..."
 
-"I felt like I had wasting my life when I switched from TF to PyTorch"
+"I felt like I had wasted my life when I finally switched from TensorFlow to PyTorch"
+
+"Did you know that the C-Compiler is written in C"
